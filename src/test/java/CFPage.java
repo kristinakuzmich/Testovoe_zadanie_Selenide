@@ -8,8 +8,8 @@ public class CFPage {
     }
     public void setPassword(String text) {
         $x("//div[@class='login-form']//input[@id='j_password']")
-                .setValue("cash_bnb")
-                .shouldBe(Condition.value("cash_bnb"));
+                .setValue(text)
+                .shouldBe(Condition.value(text));
     }
     public void clickButton() {
         $x("//div[@class='login-form']//input[@name='loginButton']")
