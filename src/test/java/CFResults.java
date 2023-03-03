@@ -10,5 +10,4 @@ public class CFResults {
         $x("//div[@class='ui-growl-message']//span[text()='Неверное имя пользователя или пароль.']")
                 .shouldBe(Condition.exactText(text));
     }
-
 }
