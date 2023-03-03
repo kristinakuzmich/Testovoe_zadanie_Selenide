@@ -3,7 +3,7 @@ import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.sleep;
 public class CFResults {
     public void isExtectedResult(String text){
-        $x("//span[text()='Êóçüìè÷ Ì.È.']")
+        $x("//span[text()='ÐšÑƒÐ·ÑŒÐ¼Ð¸Ñ‡ Ðœ.Ð˜.']")
                 .shouldBe(Condition.exactText(text));
         sleep(3000);
     }
