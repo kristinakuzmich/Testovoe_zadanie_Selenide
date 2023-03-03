@@ -12,7 +12,7 @@ public class CFTests {
         page.setLogin("bnbkass36");
         page.setPassword("cash_bnb");
         page.clickButton();
-        result.isExtectedResult("Êóçüìè÷ Ì.È.");
+        result.isExtectedResult("ĞšÑƒĞ·ÑŒĞ¼Ğ¸Ñ‡ Ğœ.Ğ˜.");
         page.exit();
     }
     @Test
@@ -20,7 +20,7 @@ public class CFTests {
         page.setLogin("bnbkass36");
         page.setPassword("cash_bnb123");
         page.clickButton();
-        result.isExtectedResult("Êóçüìè÷ Ì.È.");
+        result.isExtectedResult("ĞšÑƒĞ·ÑŒĞ¼Ğ¸Ñ‡ Ğœ.Ğ˜.");
         page.exit();
     }
 }
