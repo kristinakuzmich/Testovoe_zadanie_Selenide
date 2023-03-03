@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Google" />
         <module name="Testovoe zadanie" />
+        <module name="NEWTEST" />
       </profile>
     </annotationProcessing>
   </component>
