@@ -12,7 +12,7 @@ public class CFTests {
         page.setLogin("bnbkass36");
         page.setPassword("cash_bnb");
         page.clickButton();
-        result.isExtectedResult("Кузьмич М.И.");
+        result.isExpectedResult("Кузьмич М.И.");
         page.exit();
     }
     @Test
@@ -20,7 +20,7 @@ public class CFTests {
         page.setLogin("bnbkass36");
         page.setPassword("cash_bnb123");
         page.clickButton();
-        result.isExtectedResult("Кузьмич М.И.");
+        result.isExpectedResult("Кузьмич М.И.");
         page.exit();
     }
 }
