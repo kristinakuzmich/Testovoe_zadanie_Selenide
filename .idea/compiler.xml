@@ -7,8 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Google" />
-        <module name="Testovoe zadanie" />
-        <module name="Testovoe_zadanie_Selenide" />
       </profile>
     </annotationProcessing>
   </component>
