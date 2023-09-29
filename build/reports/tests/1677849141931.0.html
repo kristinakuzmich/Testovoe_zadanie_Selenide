@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><link type="text/css" rel="stylesheet" href="/fos/javax.faces.resource/primeicons/primeicons.css.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"><script type="text/javascript" src="/fos/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><script type="text/javascript" src="/fos/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><script type="text/javascript" src="/fos/javax.faces.resource/core.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><link type="text/css" rel="stylesheet" href="/fos/javax.faces.resource/components.css.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"><script type="text/javascript" src="/fos/javax.faces.resource/components.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><script src="/fos/javax.faces.resource/validation/validation.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><script src="/fos/javax.faces.resource/validation/validation.bv.js.xhtml?ln=primefaces&amp;v=10.0.0&amp;e=10.0.7"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='ru';PrimeFaces.settings.viewId='/login.xhtml';PrimeFaces.settings.contextPath='/fos';PrimeFaces.settings.cookiesSecure=false;PrimeFaces.settings.validateEmptyFields=true;PrimeFaces.settings.considerEmptyStringNull=false;}</script>
+        <title>Cash Fusion — фронт-офисное решение</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/fos/resources/images/favicon.ico">
+
+        
+        <link rel="stylesheet" type="text/css" href="/fos/resources/css/fos/index.css"></head><body class="login">
+
+        <div class="login-form">
+    <script src="/fos/js/common.js" type="text/javascript"></script><span id="j_idt8"></span><script type="text/javascript">$(function(){PrimeFaces.focus('loginForm');});</script>
+    <form id="formLogin" action="/fos/j_security_check" method="post"><input id="j_username" name="j_username" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" placeholder="Пользователь" onkeyup="$('#j_password').val('')" role="textbox" aria-readonly="false" aria-disabled="false"><input id="j_password" name="j_password" type="password" class="ui-password ui-inputfield ui-widget ui-state-default ui-corner-all j_password_pf" placeholder="Пароль" aria-disabled="false">
+        <div id="j_password_error" class="j_password_error_pf"></div><input id="loginButton" type="submit" name="loginButton" value="Войти" class="button button--primary"><span id="error-login" class="ui-growl-pl" data-widget="widget_error_login" data-summary="data-summary" data-severity="all,error" data-redisplay="true"></span>
+        
+    </form>
+
+    <script type="text/javascript">
+        function applySign() {
+            var totalPrefix = 'sign-action-form:login-sign-component';
+
+            document.getElementById('sign-form').j_username.value = document.getElementById(totalPrefix + ':data-to-sign').value;
+            var signToCheck = document.getElementById(totalPrefix + ':sign-result').value + '|' +
+                document.getElementById(totalPrefix + ':sign-time').value + '|' +
+                document.getElementById(totalPrefix + ':sign-time-utc').value + '|' +
+                document.getElementById(totalPrefix + ':signer-key-serial').value;
+
+            document.getElementById('sign-form').j_password.value = signToCheck;
+
+            document.getElementById('sign-form').submit();
+        }
+
+        $(document).ready(function () {
+            registerValidationPasswordLangLayout('j_password_pf');
+        });
+    </script>
+    <form id="sign-form" action="/fos/j_security_check" method="post">
+    </form>
+
+
+    <script type="application/javascript">
+        if ($.fn.disableAutocomplete)
+            $(function () {
+                $('input[type=password]').disableAutocomplete();
+            })
+    </script><div id="j_idt22" class="ui-messages ui-messages-noicon ui-widget" aria-live="polite" data-global="false" data-summary="data-summary" data-severity="all,error" data-redisplay="true"></div>
+        </div>
+<form id="footer-toolbar" name="footer-toolbar" method="post" action="/fos/login.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="footer-toolbar" value="footer-toolbar">
+
+        <div class="login-footer">
+            <div>
+                <i class="cs-logo"></i>
+                <span class="copyright"><a href="http://www.softclub.by/" class="ui-link ui-widget" target="_blank">© 2009 –  2023 SoftClub</a>
+                </span>
+            </div>
+            <div><label id="footer-toolbar:j_idt27" class="ui-outputlabel ui-widget">Дата сборки: 03-03-2023 13:57</label><label id="footer-toolbar:j_idt28" class="ui-outputlabel ui-widget">Версия: 2023cf05</label><a href="http://www.softclub.by/products/front-ofisnye-resheniya/cash-fusion/" class="ui-link ui-widget about" target="_blank">О продукте</a><div id="footer-toolbar:locale-select" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all small" aria-owns="footer-toolbar:locale-select_panel" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-describedby="footer-toolbar:j_idt30" style="min-width: 79px;"><div class="ui-helper-hidden-accessible"><input id="footer-toolbar:locale-select_focus" name="footer-toolbar:locale-select_focus" type="text" autocomplete="off"></div><div class="ui-helper-hidden-accessible"><select id="footer-toolbar:locale-select_input" name="footer-toolbar:locale-select_input" tabindex="-1" autocomplete="off" aria-hidden="true" onchange="PrimeFaces.ab({s:&quot;footer-toolbar:locale-select&quot;,e:&quot;valueChange&quot;,f:&quot;footer-toolbar&quot;,p:&quot;footer-toolbar:locale-select&quot;,u:&quot;@all&quot;});" data-p-hl="onemenu"><option value="ru" selected="selected" data-escape="true">Русский</option><option value="en" data-escape="true">English</option><option value="be" data-escape="true">Беларуская</option><option value="de" data-escape="true">Deutsch</option><option value="kz" data-escape="true">Казахский</option></select></div><label id="footer-toolbar:locale-select_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">Русский</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div></div>
+            </div>
+
+
+        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="stateless" autocomplete="off">
+</form>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div id="error-login_container" class="ui-growl ui-widget" aria-live="polite" style="z-index: 1001;"><div class="ui-growl-item-container ui-state-highlight ui-corner-all ui-helper-hidden ui-shadow ui-growl-error" style="display: block;"><div role="alert" class="ui-growl-item"><div class="ui-growl-icon-close ui-icon ui-icon-closethick" style="display:none"></div><span class="ui-growl-image ui-growl-image-error"></span><span class="ui-growl-severity ui-helper-hidden-accessible">Ошибка</span><div class="ui-growl-message"><span class="ui-growl-title">Неверное имя пользователя или пароль.</span><p></p></div><div style="clear: both;"></div></div></div></div><div id="footer-toolbar:j_idt30" class="ui-tooltip ui-widget ui-tooltip-right" role="tooltip"><div class="ui-tooltip-arrow"></div><div class="ui-tooltip-text ui-shadow ui-corner-all">Язык интерфейса</div></div><div id="footer-toolbar:locale-select_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"><div class="ui-selectonemenu-items-wrapper" style="max-height:200px"></div></div></body></html>
